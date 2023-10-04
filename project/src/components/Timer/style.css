@@ -1,0 +1,19 @@
+.timer{
+    margin: 0 auto 50px;
+    padding: 25px;
+    border-radius: 20px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: red;
+    text-align: center;
+    font-size: 130px;
+}
+.timer span{
+    width: 100px;
+    color: red;
+    filter: drop-shadow(4px 12px 3px red);
+    
+}

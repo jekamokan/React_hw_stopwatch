@@ -1,0 +1,22 @@
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    z-index: 2;
+    position: inherit;
+}
+button{
+    width: 130px;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: inherit;
+    text-shadow: 8px 6px 3px rgb(255 0 0);
+}
