@@ -2,23 +2,18 @@ import React from 'react';
 import './style.css';
 
 const Buttons = ({ isRunning, setIsRunning, time,setTime, setLapTimes }) => {
-  const startTimer = () => {
-    setIsRunning(true);
-  };
+  const startTimer = () => setIsRunning(true);
 
-  const stopTimer = () => {
-    setIsRunning(false);
-  };
+  const stopTimer = () => setIsRunning(false);
 
+  const handleLap = () => setLapTimes((prevLapTimes) => [...prevLapTimes, { ...time }]);
+  
   const resetTimer = () => {
     setIsRunning(false);
     setTime({ ms: 0, s: 0, m: 0 });
     setLapTimes([]);
   };
  
-  const handleLap = () => {
-    setLapTimes((prevLapTimes) => [...prevLapTimes, { ...time }]);
-  };
 
   return (
     <div className="buttons">
